@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">G2MDX</string>
+
+    <string name="accept_permission">Accept Contacts Permission</string>
+    <string name="add_item">Add Item</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+
+    <string name="facebook_login">Facebook Login</string>
+    <string name="facebook_app_id">831339613911736</string>
+    <string name="fb_login_protocol_scheme">fb831339613911736</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="share_photo">Share Photo</string>
+
+    <string name="begin_time">Begin Time</string>
+    <string name="end_time">End Time</string>
+    <string name="save_event">Save Event</string>
+    <string name="all_day">All Day</string>
+    <string name="event_date">Event Date</string>
+    <string name="search">Search</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.calender.CalenderFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <EditText
+        android:id="@+id/titleET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/calender_text"
+        android:gravity="start"
+        android:hint="@string/title"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideLine"
+        app:layout_constraintStart_toStartOf="@+id/startGuideLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/calender_text"
+        android:gravity="center"
+        android:hint="@string/event_date"
+        android:padding="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideLine"
+        app:layout_constraintStart_toStartOf="@+id/startGuideLine"
+        app:layout_constraintTop_toBottomOf="@+id/titleET" />
+
+    <TextView
+        android:id="@+id/beginTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/calender_text"
+        android:gravity="center"
+        android:hint="@string/begin_time"
+        android:padding="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/endTV"
+        app:layout_constraintStart_toStartOf="@+id/startGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/dateTV" />
+
+    <TextView
+        android:id="@+id/endTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/calender_text"
+        android:gravity="center"
+        android:hint="@string/end_time"
+        android:padding="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideLine"
+        app:layout_constraintStart_toEndOf="@+id/beginTV"
+        app:layout_constraintTop_toBottomOf="@id/dateTV" />
+
+    <Button
+        android:id="@+id/saveBTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_main"
+        android:enabled="false"
+        android:text="@string/save_event"
+        android:textAllCaps="false"
+        android:textColor="@color/colorButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideLine"
+        app:layout_constraintStart_toStartOf="@+id/startGuideLine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
