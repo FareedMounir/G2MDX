@@ -16,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.g2mdx.R;
@@ -31,6 +32,9 @@ public class SearchFragment extends Fragment implements SearchView {
 
     @BindView(R.id.searchET)
     EditText searchET;
+
+    @BindView(R.id.searchPB)
+    ProgressBar searchPB;
 
     private SearchPresenter presenter;
 
@@ -93,6 +97,8 @@ public class SearchFragment extends Fragment implements SearchView {
 
     @Override
     public void setAdapter() {
+        searchPB.setVisibility(View.GONE);
+        searchET.setVisibility(View.VISIBLE);
         searchRV.setAdapter(new SearchAdapter(presenter));
     }
 
